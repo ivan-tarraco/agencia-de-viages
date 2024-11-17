@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Sin Límites - Tu Agencia de Viajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Aventuras Sin Límites</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#planes" class="hover:underline">Planes de Viaje</a></li>
+                    <li><a href="#personalizado" class="hover:underline">Viaje Personalizado</a></li>
+                    <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+        <section id="planes" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">Nuestros Planes de Viaje</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Aventura en la Montaña</h3>
+                    <p class="mb-4">Disfruta de 7 días de senderismo y paisajes impresionantes en los Alpes Suizos.</p>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Más información</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Relax en la Playa</h3>
+                    <p class="mb-4">5 noches de lujo y tranquilidad en las hermosas playas de Bali, Indonesia.</p>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Más información</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Tour Cultural</h3>
+                    <p class="mb-4">10 días recorriendo las ciudades más emblemáticas de Europa: París, Roma y Atenas.</p>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personalizado" class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">Crea tu Viaje Personalizado</h2>
+            <form class="bg-white rounded-lg shadow-md p-6" action="https://formsubmit.co/iv.riv.sev@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo Viaje Personalizado">
+                <input type="hidden" name="_next" value="https://preply.com/es/">
+                <div class="mb-4">
+                    <label for="nombre" class="block mb-2">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required class="w-full px-3 py-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="destino" class="block mb-2">Destino deseado</label>
+                    <input type="text" id="destino" name="destino" required class="w-full px-3 py-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="fechas" class="block mb-2">Fechas aproximadas</label>
+                    <input type="text" id="fechas" name="fechas" required class="w-full px-3 py-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="presupuesto" class="block mb-2">Presupuesto aproximado</label>
+                    <input type="number" id="presupuesto" name="presupuesto" required class="w-full px-3 py-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="preferencias" class="block mb-2">Preferencias y comentarios adicionales</label>
+                    <textarea id="preferencias" name="preferencias" rows="4" class="w-full px-3 py-2 border rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Enviar solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacto" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+            <p class="mb-2">Teléfono: +34 123 456 789</p>
+            <p class="mb-2">Email: info@aventurassinlimites.com</p>
+            <p>Dirección: Calle Principal 123, 28001 Madrid, España</p>
+        </div>
+    </footer>
+</body>
+</html>
